@@ -6,7 +6,6 @@
 
     <!-- Bootstrap reference -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
    
     <!-- fullpage.js reference -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous">
@@ -30,13 +29,13 @@
         <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#sec-home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About Me</a>
+                    <a class="nav-link" href="#sec-about">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Experience<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="sec-experience">Experience<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="">Projects<span class="sr-only">(current)</span></a>
@@ -47,7 +46,7 @@
 
     <div id="fullpage" class="container-fluid">
 
-        <div id="home" class="section active">
+        <div id="sec-home" class="section active">
             <div class="row">
                 <div class="col-sm-6">
                     <h3>Hi, my name is Rian Jasmine.</h3> 
@@ -61,10 +60,10 @@
             </div>
         </div>
 
-        <div id="about" class="section">
+        <div id="sec-about" class="section">
             <div class="row">
                 <div class="col-sm-6">
-                    <h3>Rain splash animation</h3>
+                    <h3 class="Rain">Rain splash animation</h3>
                 </div>
                 <div class="col-sm-6">
                     <h3>Seattle-native.</h3>                
@@ -74,38 +73,23 @@
             </div>
         </div>
 
-        <div id="experience" class="section">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h3>Experience</h3>
+        <div id="sec-experience" class="section">
+            <h3>Technical Experience</h3>
+
+            <div class="square">
+                <h4>Floop Edu.</h4>
+                <div class="description">
+                    <p>Web Dev Intern</p>
+                    <p>June 2020-August 2020</p>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                      </div>
+            <div class="square">
+                <h4>Microsoft</h4>
+                <div class="description">
+                    <p>Software Engineer Intern</p>
+                    <p>June 2019-August 2019</p>    
                 </div>
             </div>
-
         </div>
             
     </div>
@@ -115,11 +99,8 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
-        var myFullpage = new fullpage('#fullpage', {
-            scrollBar: true
-        });
-    </script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
 </html>

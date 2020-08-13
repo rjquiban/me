@@ -18,27 +18,26 @@
 <body>
     <div class="container-fluid">
     <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="">
-            <img id="logo" src="assets/logoName.jpg" alt="Logo">
-        </a>
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <img id="logoFull" href="" src="assets/logoName cropped.jpg" alt="Rian Jasmine Logo">
+        <img id="logoSmall" href="" src="assets/logoSmall cropped.jpg" alt="Rian Jasmine Logo">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded=false aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#sec-home">Home</a>
+            <ul id="menu" class="navbar-nav ml-auto">
+                <li data-menuanchor="home" class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#sec-about">About Me</a>
+                <li data-menuanchor="about" class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="sec-experience">Experience<span class="sr-only">(current)</span></a>
+                <li data-menuanchor="experience" class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Projects<span class="sr-only">(current)</span></a>
+                <li data-menuanchor="projects" class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
                 </li>
             </ul>
         </div>
@@ -46,10 +45,10 @@
 
     <div id="fullpage" class="container-fluid">
 
-        <div id="sec-home" class="section active">
+        <div class="section active">
             <div class="row">
                 <div class="col-sm-6">
-                    <h3>Hi, my name is Rian Jasmine.</h3> 
+                    <h3>Hi, my name is Rian Jasmine :)</h3> 
                 </div>
                 <div class="col-sm-6">
                     <svg id="arrowDown" viewBox="0 0 16 16" class="bi bi-arrow-down" xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +59,7 @@
             </div>
         </div>
 
-        <div id="sec-about" class="section">
+        <div class="section">
             <div class="row">
                 <div class="col-sm-6">
                     <h3 class="Rain">Rain splash animation</h3>
@@ -73,28 +72,45 @@
             </div>
         </div>
 
-        <div id="sec-experience" class="section">
+        <div class="section">
             <h3>Technical Experience</h3>
 
-            <div class="square">
-                <h4>Floop Edu.</h4>
-                <div class="description">
-                    <p>Web Dev Intern</p>
-                    <p>June 2020-August 2020</p>
+            <div id="floopCard" class="square">
+                <div class="front">
+                    <h4><img class="logos" src="assets/Floop Logo.png" alt="Floop Logo">Floop Edu.</h4>
+                    <p><i>Web Development Intern</i></p>
+                    <p>June 2020 - August 2020</p>
+                </div>
+    
+                <div class="back hide">
+                    <h4>Accessibility</h4>
+                    <ul>
+                        <li>Conduct accessibility audit</li>
+                        <li>Resolve web app accessibility issues</li>
+                        <li>Implement keyboard-only functionality</li>    
+                    </ul>
+                    <p><i>JavaScript, React</i></p>
                 </div>
             </div>
-            <div class="square">
-                <h4>Microsoft</h4>
-                <div class="description">
-                    <p>Software Engineer Intern</p>
-                    <p>June 2019-August 2019</p>    
+
+            <div id="msCard" class="square">
+                <div class="front">
+                    <h4><img class="logos" src="assets/Microsoft Logo.png" alt="Microsoft Logo">Microsoft</h4>
+                    <p><i>Software Engineering Intern</i></p>
+                    <p>June 2019 - August 2019</p>    
+                </div>
+
+                <div class="back hide">
+                    <h4>Office Media Group</h4>
+                    <ul>
+                        <li>Created 5 instructional coding videos</li>
+                        <li>Developed a 3D web-based game using Babylon.js</li>
+                    </ul>
+                    <p><i>HTML, JavaScript, TypeScript</i></p>
                 </div>
             </div>
-        </div>
-            
+        </div> 
     </div>
-
-
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

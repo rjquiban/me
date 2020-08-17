@@ -56,12 +56,27 @@ ul {
 
 #arrowDown {
     fill: white;
-    width: 3em;
-    height: 3em;
+    width: 4em;
+    height: 4em;
 
     animation-name: bounce;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+}
+
+#me {
+    max-height: 400px;
+    border-radius: 10%;
+}
+
+#bio {
+    padding-top: 7%;
+}
+
+#cards {
+    margin: 0 auto;
+    max-width: 1000px;
+    align-content: space-between;
 }
 
 @keyframes bounce {
@@ -95,6 +110,10 @@ ul {
 
     #logoSmall {
         display: inline-flex;
+    }
+
+    #arrowDown {
+        margin-top: 2em;
     }
 }
 

@@ -47,10 +47,10 @@
 
         <div class="section active">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 d-flex justify-content-center">
                     <h3>Hi, my name is Rian Jasmine :)</h3> 
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 d-flex justify-content-center">
                     <svg id="arrowDown" viewBox="0 0 16 16" class="bi bi-arrow-down" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M4.646 9.646a.5.5 0 0 1 .708 0L8 12.293l2.646-2.647a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 0-.708z"/>
                         <path fill-rule="evenodd" d="M8 2.5a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-1 0V3a.5.5 0 0 1 .5-.5z"/>
@@ -60,54 +60,57 @@
         </div>
 
         <div class="section">
-            <div class="row">
-                <div class="col-sm-6">
-                    <h3 class="Rain">Rain splash animation</h3>
+            <div class="row ">
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img id="me" src="assets/me.JPG" alt="Rian Jasmine smiling">
                 </div>
-                <div class="col-sm-6">
-                    <h3>Seattle-native.</h3>                
-                    <h3>Software developer.</h3>
-                    <h3>Freshman at Santa Clara University.</h3>
+                <div id="bio" class="col-md-6">
+                    <h3>Seattle-native,</h3>
+                    <h3>Aspiring software developer,</h3>
+                    <h3>First year CS student at Santa Clara University.</h3>   
+                    <h3><a href="https://www.linkedin.com/in/rianjasminequiban/">Let's Connect!</a></h3>
                 </div>
             </div>
         </div>
 
         <div class="section">
-            <h3>Technical Experience</h3>
+            <div id="cards">
+                <h3 id="experienceHeader">Technical Experience</h3>
 
-            <div id="floopCard" class="square">
-                <div class="front">
-                    <h4><img class="logos" src="assets/Floop Logo.png" alt="Floop Logo">Floop Edu.</h4>
-                    <p><i>Web Development Intern</i></p>
-                    <p>June 2020 - August 2020</p>
+                <div id="floopCard" class="square">
+                    <div class="front">
+                        <h4><img class="logos" src="assets/Floop Logo.png" alt="Floop Logo">Floop Edu.</h4>
+                        <p><i>Web Development Intern</i></p>
+                        <p>June 2020 - August 2020</p>
+                    </div>
+        
+                    <div class="back hide">
+                        <h4>Accessibility</h4>
+                        <ul>
+                            <li>Conduct accessibility audit</li>
+                            <li>Resolve web app accessibility issues</li>
+                            <li>Implement keyboard-only functionality</li>    
+                        </ul>
+                        <p><i>JavaScript, React</i></p>
+                    </div>
                 </div>
     
-                <div class="back hide">
-                    <h4>Accessibility</h4>
-                    <ul>
-                        <li>Conduct accessibility audit</li>
-                        <li>Resolve web app accessibility issues</li>
-                        <li>Implement keyboard-only functionality</li>    
-                    </ul>
-                    <p><i>JavaScript, React</i></p>
-                </div>
-            </div>
-
-            <div id="msCard" class="square">
-                <div class="front">
-                    <h4><img class="logos" src="assets/Microsoft Logo.png" alt="Microsoft Logo">Microsoft</h4>
-                    <p><i>Software Engineering Intern</i></p>
-                    <p>June 2019 - August 2019</p>    
-                </div>
-
-                <div class="back hide">
-                    <h4>Office Media Group</h4>
-                    <ul>
-                        <li>Created 5 instructional coding videos</li>
-                        <li>Developed a 3D web-based game using Babylon.js</li>
-                    </ul>
-                    <p><i>HTML, JavaScript, TypeScript</i></p>
-                </div>
+                <div id="msCard" class="square">
+                    <div class="front">
+                        <h4><img class="logos" src="assets/Microsoft Logo.png" alt="Microsoft Logo">Microsoft</h4>
+                        <p><i>Software Engineering Intern</i></p>
+                        <p>June 2019 - August 2019</p>    
+                    </div>
+    
+                    <div class="back hide">
+                        <h4>Office Media Group</h4>
+                        <ul>
+                            <li>Created 5 instructional coding videos</li>
+                            <li>Developed a 3D web-based game using Babylon.js</li>
+                        </ul>
+                        <p><i>HTML, JavaScript, TypeScript</i></p>
+                    </div>
+                </div>    
             </div>
         </div> 
     </div>

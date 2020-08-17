@@ -73,6 +73,10 @@ ul {
     padding-top: 7%;
 }
 
+#experienceHeader {
+    margin-left: 2%;
+}
+
 #cards {
     margin: 0 auto;
     max-width: 1000px;

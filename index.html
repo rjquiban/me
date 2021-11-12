@@ -48,7 +48,7 @@
         <div class="section active">
             <div class="row">
                 <div class="col-sm-6 d-flex justify-content-center">
-                    <h3>Hi, my name is Rian Jasmine :)</h3> 
+                    <h3>Hi, my name is Rian Jasmine or RJ for short :)</h3> 
                 </div>
                 <div class="col-sm-6 d-flex justify-content-center">
                     <svg id="arrowDown" viewBox="0 0 16 16" class="bi bi-arrow-down" xmlns="http://www.w3.org/2000/svg">
@@ -62,55 +62,87 @@
         <div class="section">
             <div class="row ">
                 <div class="col-md-6 d-flex justify-content-center">
-                    <img id="me" src="assets/me.JPG" alt="Rian Jasmine smiling">
+                    <img id="me" src="assets/headshot.jpg" alt="RJ Quiban, headshot smiling">
                 </div>
                 <div id="bio" class="col-md-6">
                     <h3>Seattle-native,</h3>
                     <h3>Aspiring software developer,</h3>
-                    <h3>First year CS student at Santa Clara University.</h3>   
+                    <h3>Second year CS student at Santa Clara University.</h3>   
                     <h3><a href="https://www.linkedin.com/in/rianjasminequiban/">Let's Connect!</a></h3>
                 </div>
             </div>
         </div>
         <!-- experience section -->
         <div class="section">
-            <div id="cards">
-                <h3 id="experienceHeader">Technical Experience</h3>
+            <div id="cards" class="row">
+                <div class="col-2 d-flex justify-content-center">
+                    <h3 id="experienceHeader" class="align-middle">Technical Experience</h3>
+                </div>
 
-                <div id="floopCard" class="square">
-                    <div class="front">
-                        <h4><img class="logos" src="assets/Floop Logo.png" alt="Floop Logo">Floop Edu.</h4>
-                        <p><i>Web Development Intern</i></p>
-                        <p>June 2020 - August 2020</p>
+                <div id="bio" class="col-10 justify-content-center">
+                    <!-- PTHub Card -->
+                    <div id="pthubCard" class="square">
+                        <div class="front">
+                            <h4><img class="logos" src="assets/PTHub Logo.png" alt="Floop Logo">Public Transit Hub</h4>
+                            <p><i>Research Assistant</i></p>
+                            <p>May 2021 - Present</p>
+                        </div>
+            
+                        <div class="back hide">
+                            <h5 class="teams">Web Development</h5>
+                            <ul class="info">
+                                <li>Integrating code base with Amazon Cognito 
+                                    to accelerate MVP development</li>
+                                <li>Managing Git workflow of web dev team to 
+                                    enforce code quality standards</li>    
+                            </ul>
+                            <p class="info"><i>JavaScript, React</i></p>
+                        </div>
                     </div>
+
+
+                      <!-- Floop Card -->
+                    <div id="floopCard" class="square">
+                        <div class="front">
+                            <h4><img class="logos" src="assets/Floop Logo.png" alt="Floop Logo">Floop Edu.</h4>
+                            <p><i>Web Development Intern</i></p>
+                            <p>June 2020 - August 2020</p>
+                        </div>
+            
+                        <div class="back hide">
+                            <h5 class="teams">Web Dev & Accessibility</h5>
+                            <ul class="info">
+                                <li>Conducted audit of app, resulting 
+                                    in improvement of company-wide 
+                                    accessibility processes</li>
+                                <li>Led accessibility project on GitHub to 
+                                    resolve 5 high-priority accessibility 
+                                    issues</li>    
+                            </ul>
+                            <p class="info"><i>HTML/CSS, JavaScript, AWS Cognito</i></p>
+                        </div>
+                    </div> 
+
+                    <!-- Microsoft Card -->
+                    <div id="msCard" class="square">
+                        <div class="front">
+                            <h4><img class="logos" src="assets/Microsoft Logo.png" alt="Microsoft Logo">Microsoft</h4>
+                            <p><i>Software Engineering Intern</i></p>
+                            <p>June 2019 - August 2019</p>    
+                        </div>
         
-                    <div class="back hide">
-                        <h4>Accessibility</h4>
-                        <ul>
-                            <li>Conduct accessibility audit</li>
-                            <li>Resolve web app accessibility issues</li>
-                            <li>Implement keyboard-only functionality</li>    
-                        </ul>
-                        <p><i>JavaScript, React</i></p>
+                        <div class="back hide">
+                            <h5 class="teams">Office Media Group</h5>
+                            <ul class="info">
+                                <li>Created 5 instructional videos to educate 
+                                    high school students about coding fundamentals</li>
+                                <li>Developed and deployed a 3D web-based Tetris 
+                                    game to explore game development</li>
+                            </ul>
+                            <p class="info"><i>HTML, JavaScript, TypeScript</i></p>
+                        </div> 
                     </div>
                 </div>
-    
-                <div id="msCard" class="square">
-                    <div class="front">
-                        <h4><img class="logos" src="assets/Microsoft Logo.png" alt="Microsoft Logo">Microsoft</h4>
-                        <p><i>Software Engineering Intern</i></p>
-                        <p>June 2019 - August 2019</p>    
-                    </div>
-    
-                    <div class="back hide">
-                        <h4>Office Media Group</h4>
-                        <ul>
-                            <li>Created 5 instructional coding videos</li>
-                            <li>Developed a 3D web-based game using Babylon.js</li>
-                        </ul>
-                        <p><i>HTML, JavaScript, TypeScript</i></p>
-                    </div>
-                </div>    
             </div>
         </div> 
         <!-- projects section -->

@@ -12,7 +12,7 @@ ul {
     font-weight: 700;
 }
 
-.square {
+.experienceCards {
     width: 95%;
     height: 175px;
     padding: 35px;
@@ -26,11 +26,30 @@ ul {
     transition: transform 400ms;
 }
 
-.square p {
+.projects {
+    margin-left: 7%;
+}
+
+.projectSquares {
+    width: 400px;
+    height: 375px;
+    padding: 35px;
+    background: #403c41;
+    float: left;
+    margin: 1%;
+    border-radius: 15%;
+    /* margin-left: 2%; */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: transform 400ms;
+}
+
+.experienceCards p {
     margin-bottom: 0;
 }
 
-.square:hover{
+.experienceCards:hover{
     background: #7b7a88;
     transform: rotateY(10deg);
 }
@@ -85,6 +104,16 @@ ul {
     align-content: space-between;
 }
 
+#projectsHeader {
+    margin-left: 7%;
+}
+
+#projectSquares {
+    margin: 0 auto;
+    max-width: 1000px;
+    align-content: space-between;
+}
+
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0px);
@@ -132,6 +161,11 @@ ul {
 
     .info {
         font-size: 12px;
+    }
+
+    .projectSquares {
+        height: 300px;
+        border-radius: 10%;
     }
 }
 

@@ -65,6 +65,10 @@ ul {
     margin-bottom: 5px;
 }
 
+.links {
+    color: white;
+}
+
 .outlineButton {
     background-color: transparent;
     color: white;

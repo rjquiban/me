@@ -109,10 +109,6 @@ body {
     margin: 1rem 0 1rem 0;
 }
 
-.project p {
-    margin-bottom: 0;
-}
-
 .project a {
     text-decoration: none;
 }
@@ -158,6 +154,10 @@ body {
 }
 
 @media (max-width: 991px) {
+    .projects {
+        margin-bottom: 0.5rem;
+    }
+
     #logoFull {
         display: none;
     }

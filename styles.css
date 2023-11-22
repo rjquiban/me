@@ -140,15 +140,11 @@ body {
 
 /* BREAKPOINT RESPONSIVENESS */
 
-@media (min-width: 768px){
-    /* .header {
-      position: absolute;
-      top: 0px;
-      bottom: 0;
-      left: 0;
-      width: 15%;
-      overflow-y: scroll; 
-    } */
+@media (max-width: 425px){
+    #me {
+        width: 100px;
+        margin: 0 0.5rem 0.5rem 0;
+    }
 }
 
 @media (min-width: 992px) {

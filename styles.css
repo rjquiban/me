@@ -13,6 +13,25 @@ body {
     color: var(--lightgrey);
 }
 
+h1, h2 {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+}
+
+h3, h4 {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 600;
+}
+
+.title {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+}
+
+p, li {
+    font-family: 'Noto Serif', serif;
+}
+
 .header {
     padding: 1rem 5% 1rem 5%;
     margin: auto 0;
@@ -30,18 +49,18 @@ body {
 }
 
 .nav-section {
-    margin-top: 2rem;
+    margin: 2rem 0 3rem 0;
 }
 
 .accordion {
     background-color: var(--navy);
     color: var(--lightgrey);
     cursor: pointer;
-    padding: 14px;
+    padding: 1rem;
     width: 100%;
     text-align: left;
     border: none;
-    border-bottom: 1px solid var(--lightgrey);
+    border-bottom: 0.5px solid var(--lightgrey);
     transition: 0.4s;
 }
 
@@ -63,20 +82,8 @@ body {
     margin-bottom: 5px;
 }
 
-.outlineButton {
-    background-color: transparent;
-    color: var(--electricblue);
-    border: 2px solid var(--electricblue);
-    border-radius: 10px;
-}
-
-.outlineButton:hover {
-    background-color: var(--electricblue);
-    color: var(--navy);
-}
-
 .panel {
-    padding: 0 18px;
+    padding: 0 1rem;
     background-color: var(--navy);
     overflow: hidden;
     max-height: 0;
@@ -84,12 +91,21 @@ body {
 }
 
 .panel ul {
-    margin: 0.5rem 0 0.5rem 0;
+    margin: 1rem 0;
     padding-left: 0.5rem;
 }
 
+.panel li {
+    margin-bottom: 0.5rem;
+}
+
 .skills {
+    margin-bottom: 1rem;
+}
+
+.skill {
     background-color: rgba(var(--electricbluergb), 0.2);
+    margin: 0.25rem 0 0.25rem 0;
     color: var(--electricblue);
     padding: 0px 0.5rem;
     border-radius: 20px;
@@ -101,12 +117,20 @@ body {
     color: var(--lightgrey);
 }
 
-.projects {
+.project-img {
     width: 100%;
 }
 
 .project {
-    margin: 1rem 0 1rem 0;
+    background-color: var(--darknavy);
+    border-radius: 15px;
+    padding: 1rem 0;
+    margin: 0.5rem 0 0.5rem 0;
+    transition: 0.4s;
+}
+
+.project:hover {
+    background-color: var(--darknavy);
 }
 
 .project a {
@@ -121,35 +145,42 @@ body {
     color: inherit;
 }
 
-#me {
-    width: 200px;
-    float: left;
-    margin: 0 1.5rem 1rem 0;
-    border-radius: 20px;
+.contact-icons {
+    -webkit-text-stroke: 0.5px;
+    color: var(--electricblue);
+    font-size: 2rem;
+    margin: 0 0.5rem 0 0;
 }
 
-#logoFull, #logoSmall {
-    max-height: 40px;
+.contact-icons:hover {
+    color: var(--white);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+#me {
+    width: 300px;
+    float: left;
+    margin: 0 1.5rem 1rem 0;
+    border-radius: 50%;
+}
+
+#logoSmall {
+    max-height: 30px;
     float: right;
     margin: 1rem;
 }
 
 /* BREAKPOINT RESPONSIVENESS */
-
-@media (max-width: 425px){
+@media (max-width: 767px){
     #me {
         width: 100px;
         margin: 0 0.5rem 0.5rem 0;
-    }
-}
-
-@media (min-width: 992px) {
-    #logoFull {
-        display: inline-flex;
-    }
-
-    #logoSmall {
-        display: none;
     }
 }
 

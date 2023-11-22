@@ -2,39 +2,45 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
     <!-- Bootstrap reference -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>RJ Quiban</title>
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-4 header">
+            <div class="col-md-4 header">
+                <img id="me" class="img-fluid" src="assets/headshotSquare.jpg" alt="RJ Quiban, headshot smiling">
                 <h1 class="emphasis">RJ Quiban</h1>
-                <h4>Aspiring SWE | First-Gen | Fil-Am</h4>
-                <a href="https://www.linkedin.com/in/rianjasminequiban/" target="_blank"><button type="button" class="outlineButton" >Let's Connect</button></a>
+                <h4>Aspiring SWE | First-Gen | FilAm</h4>
+                <a href="https://www.linkedin.com/in/rianjasminequiban/" target="_blank" title="Open RJ's LinkedIn Profile (new window)"><i class="bi bi-linkedin contact-icons"></i></a>
+                <a href="https://github.com/rjquiban" target="_blank" title="Open RJ's GitHub (new window)"><i class="bi bi-github contact-icons"></i></a>
+                <a href="mailto:rjquiban@gmail.com" target="_blank" title="Send RJ an email (new window)"><i class="bi bi-envelope-fill contact-icons"></i></a>
             </div>
-            <div class="col-sm-8 resume scrollspy-example" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" tabindex="0">
+            <div class="col-md-8 resume scrollspy-example" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" tabindex="0">
                 <div class="row nav-section">
                     <div class="col-sm-12">
-                        <img id="me" class="img-fluid" src="assets/headshot.jpg" alt="RJ Quiban, headshot smiling">
-                        <h3>About Me</h3>
-                        <p>Growing up, my parents often told me, “School first, play second,” subsequently instilling in me a profound appreciation for my education. Their unwavering belief in the power of knowledge and the opportunities it creates has been a guiding force throughout my life. The reminder of “school first,” combined with being a first-generation college student, has drilled into me the importance of curiosity, hard work, and continuous learning.</p>
-                        <p>Recognizing the potential to shape the future, I am passionate about Computer Science because I want to be at the forefront of innovation. I’m interested in the intersection of technology and social good — technology has the power to not only solve complex problems but also to create positive change.</p>
+                        <h4 class="emphasis">About Me</h4>
+                        <p>Growing up, my parents often told me, “School first, play second,” subsequently instilling in me a profound appreciation for my education. Their unwavering belief in the power of knowledge and the opportunities it creates has been a guiding force throughout my life. The reminder of “school first,” combined with being a <span class="emphasis">first-generation college student</span>, has drilled into me the importance of <span class="emphasis">curiosity, hard work, and continuous learning.</span></p>
+                        <p>Recognizing the potential to shape the future, I am passionate about Computer Science because I want to be at the forefront of innovation. I’m interested in the <span class="emphasis">intersection of technology and social good</span> — technology has the power to not only solve complex problems but also to create positive change.</p>
+                        <p>I am currently a senior at Santa Clara University, <span class="emphasis">expecting my BS in Computer Science by June 2024</span>. I am actively looking for full-time, post-grad SWE opportunities based in the Greater Seattle Area or the Bay Area.</p>
                     </div>
                 </div>
                 <div class="row nav-section">
-                    <h3>Experience</h3>
+                    <h4 class="emphasis">Experience</h4>
                     <button class="accordion">
                         <div class="row align-items-center">
                             <div class="col-sm-11">                       
-                                <p class="emphasis"><img class="logos" src="assets/INRIXLogo.png" alt="INRIX Logo"><strong>INRIX</strong>, Software Engineering Intern</p>
+                                <p class="emphasis title"><img class="logos" src="assets/INRIXLogo.png" alt="INRIX Logo"><strong>INRIX</strong>, Software Engineering Intern</p>
                                 <p><i>June 2023 - Sept 2023</i></p>
+                                <p>Kirkland, WA</p>
                             </div>
                             <div class="col-sm-1">
                                 <i class="bi bi-chevron-down"></i>
@@ -48,16 +54,19 @@
                         <li>Engineered frontend data handlers in JavaScript to create new product logic layer, reducing data visualization load times and improving responsiveness for quality metrics dashboard</li>
                         <li>Implemented user interfaces for detailed country, urban area, and data provider views using Vue.js to provide deeper insights into speed quality metrics and calculations</li>
                       </ul>
-                      <p class="skills">Node.js</p>
-                      <p class="skills">API Gateway</p>
-                      <p class="skills">JavaScript</p>
-                      <p class="skills">Vue.js</p>
+                      <div class="skills">
+                        <p class="skill">Node.js</p>
+                        <p class="skill">API Gateway</p>
+                        <p class="skill">JavaScript</p>
+                        <p class="skill">Vue.js</p>
+                      </div>
                     </div>
                     <button class="accordion">
                         <div class="row align-items-center">
                             <div class="col-sm-11">
-                                <p class="emphasis"><img class="logos" src="assets/FloopLogo.png" alt="Floop Logo"><strong>Floop Edu</strong>, Software Engineering Intern</p>
+                                <p class="emphasis title"><img class="logos" src="assets/FloopLogo.png" alt="Floop Logo"><strong>Floop Edu</strong>, Software Engineering Intern</p>
                                 <p><i>June 2022 - Aug 2022</i></p>
+                                <p>Remote</p>
                             </div>
                             <div class="col-sm-1">
                                 <i class="bi bi-chevron-down"></i>
@@ -71,16 +80,19 @@
                         <li>Developed feature in JavaScript that converts web-based markup location to static pdf representation, supporting offline annotated records for teachers</li>
                         <li>Built end-to-end subscription management system, integrating with Stripe and Firebase to reliably sync payment management within two weeks of paywall launch</li>
                       </ul>
-                      <p class="skills">JavaScript</p>
-                      <p class="skills">React</p>
-                      <p class="skills">Stripe</p>
-                      <p class="skills">Firebase</p>
+                      <div class="skills">
+                        <p class="skill">JavaScript</p>
+                        <p class="skill">React</p>
+                        <p class="skill">Stripe</p>
+                        <p class="skill">Firebase</p>
+                      </div>
                     </div>
                     <button class="accordion">
                         <div class="row align-items-center">
                             <div class="col-sm-11">
-                                <p class="emphasis"><img class="logos" src="assets/FloopLogo.png" alt="Floop Logo"><strong>Floop Edu</strong>, Web Development Intern</p>
+                                <p class="emphasis title"><img class="logos" src="assets/FloopLogo.png" alt="Floop Logo"><strong>Floop Edu</strong>, Web Development Intern</p>
                                 <p><i>June 2020 - Aug 2020</i></p>
+                                <p>Remote</p>
                             </div>
                             <div class="col-sm-1">
                                 <i class="bi bi-chevron-down"></i>
@@ -93,14 +105,17 @@
                         <li>Conducted accessibility audit of Floop web application and created 4-page document detailing recommendations for improvement, which resulted in creation of company-wide accessibility standards</li>
                         <li>Led accessibility project for web development team to resolve 5 high-priority accessibility issues</li>
                       </ul>
-                      <p class="skills">JavaScript</p>
-                      <p class="skills">React</p>
+                      <div class="skills">
+                        <p class="skill">JavaScript</p>
+                        <p class="skill">React</p>
+                      </div>
                     </div>
                     <button class="accordion">
                         <div class="row align-items-center">
                             <div class="col-sm-11">
-                                <p class="emphasis"><img class="logos" src="assets/MicrosoftLogo.png" alt="Microsoft Logo"><strong>Microsoft</strong>, Software Engineering Intern</p>
+                                <p class="emphasis title"><img class="logos" src="assets/MicrosoftLogo.png" alt="Microsoft Logo"><strong>Microsoft</strong>, Software Engineering Intern</p>
                                 <p><i>June 2019 - Aug 2019</i></p>
+                                <p>Redmond, WA</p>
                             </div>
                             <div class="col-sm-1">
                                 <i class="bi bi-chevron-down"></i>
@@ -113,36 +128,55 @@
                         <li>Created 5 instructional videos using Office Media products to teach high school students coding fundamentals</li>
                         <li>Developed 3D Tetris prototype using JavaScript, TypeScript, and Babylon.js to explore game development </li>
                       </ul>
-                      <p class="skills">JavaScript</p>
-                      <p class="skills">TypeScript</p>
-                      <p class="skills">Babylon.js</p>
+                      <div class="skills">
+                        <p class="skill">JavaScript</p>
+                        <p class="skill">TypeScript</p>
+                        <p class="skill">Babylon.js</p>
+                      </div>
                     </div>
                 </div>
-                <div class="row nav-section">
-                    <h3>Projects</h3>
+                <div class="row nav-section projects">
+                    <h4 class="emphasis title">Projects</h4>
                     <div class="row project">
                         <div class="col-lg-4 align-self-center">
-                            <img class="projects" src="assets/PTHubWebsite.jpg" alt="PTHub Logo">
+                            <img class="project-img" src="assets/logoName.jpg" alt="PTHub Logo">
                         </div>
                         <div class="col-lg-8">
-                            <a href="https://publictransithub.com/" target="_blank" class="emphasis"><strong>Public Transit Hub</strong>, Research Assistant <i class="bi bi-box-arrow-in-up-right"></i></a>
+                            <a href="https://github.com/rjquiban/me" target="_blank" class="emphasis title"><strong>Portfolio </strong><i class="bi bi-box-arrow-in-up-right"></i></a>
+                            <p><i>Nov 2023</i></p>
+                            <p><strong>What? </strong>A personal portfolio to highlight who I am, my experiences, and my projects.</p>    
+                            <div class="skills">
+                                <p class="skill">JavaScript</p>
+                                <p class="skill">HTML/CSS</p>      
+                                <p class="skill">Bootstrap</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row project">
+                        <div class="col-lg-4 align-self-center">
+                            <img class="project-img" src="assets/PTHubWebsite.jpg" alt="PTHub Logo">
+                        </div>
+                        <div class="col-lg-8">
+                            <a href="https://publictransithub.com/" target="_blank" class="emphasis title"><strong>Public Transit Hub</strong>, Research Assistant <i class="bi bi-box-arrow-in-up-right"></i></a>
                             <p><i>May 2021 - May 2023</i></p>
                             <p><strong>What? </strong>PTHub was created to give Santa Clara University students an easy and accessible way to travel smarter.</p>
                             <ul>
                                 <li>Integrated web app with Amazon Cognito to add user authentication, accelerating product development</li>
                                 <li>Implemented dynamic map to display geolocation data of bus routes and stops</li>
-                            </ul>       
-                            <p class="skills">JavaScript</p>
-                            <p class="skills">HTML/CSS</p>      
-                            <p class="skills">Amazon Cognito</p>
+                            </ul>    
+                            <div class="skills">
+                                <p class="skill">JavaScript</p>
+                                <p class="skill">HTML/CSS</p>      
+                                <p class="skill">Amazon Cognito</p>
+                            </div>   
                         </div>
                     </div>
                     <div class="row project">
                         <div class="col-lg-4 align-self-center">
-                            <img class="projects" src="assets/Tripfolio.jpeg" alt="Tripfolio Logo">
+                            <img class="project-img" src="assets/Tripfolio.jpeg" alt="Tripfolio Logo">
                         </div>
                         <div class="col-lg-8">
-                            <a href="https://devpost.com/software/bay-trips" target="_blank" class="emphasis"><strong>Tripfol.io</strong>, 1st Place Prize INRIX Hack <i class="bi bi-box-arrow-in-up-right"></i></a>
+                            <a href="https://devpost.com/software/bay-trips" target="_blank" class="emphasis title"><strong>Tripfol.io</strong>, 1st Place Winner INRIX Hack <i class="bi bi-box-arrow-in-up-right"></i></a>
                             <p><i>Nov 2022</i></p>
                             <p><strong>What? </strong>Tripfol.io curates an experience for you - share your location, receive a list of recommendations, select places of interest, and watch a complete itinerary unfold before your eyes.</p>
                             <ul>
@@ -150,64 +184,71 @@
                                 <li>Designed greedy algorithm to find most optimal multi-waypoint route for efficient routing between stops</li>
                                 <li>Managed final project presentation to showcase innovation and turn project into compelling business pitch</li>
                             </ul>
-                            <p class="skills">Flask</p>
-                            <p class="skills">Python</p>        
+                            <div class="skills">
+                                <p class="skill">Flask</p>
+                                <p class="skill">Python</p>        
+                            </div>
                         </div>
                     </div>
                     <div class="row project">
                         <div class="col-lg-4 align-self-center">
-                            <img class="projects" src="assets/SmartWalkWebsite.jpeg" alt="SmartWalk Website">
+                            <img class="project-img" src="assets/SmartWalkWebsite.jpeg" alt="SmartWalk Website">
                         </div>
                         <div class="col-lg-8">
-                            <a href="https://devpost.com/software/safewalk-0yf4ue?ref_content=my-projects-tab&ref_feature=my_projects" target="_blank" class="emphasis"><strong>Smart Walk</strong>, INRIX Hack <i class="bi bi-box-arrow-in-up-right"></i></a>
+                            <a href="https://devpost.com/software/safewalk-0yf4ue?ref_content=my-projects-tab&ref_feature=my_projects" target="_blank" class="emphasis title"><strong>Smart Walk</strong>, INRIX Hack <i class="bi bi-box-arrow-in-up-right"></i></a>
                             <p><i>Nov 2021</i></p>
                             <p><strong>What? </strong>SmartWalk provides the safest routing from point A to point B using INRIX routing data and criminal incident reports.</p>
                             <ul>
                                 <li>Developed front-end of website to process Inrix routing API data and place geojson objects on map</li>
                                 <li>Integrated actual SFPD crimes data to evaluate and rank safety of 3 routes</li>
                             </ul>
-                            <p class="skills">JavaScript</p>
-                            <p class="skills">HTML/CSS</p>      
+                            <div class="skills">
+                                <p class="skill">JavaScript</p>
+                                <p class="skill">HTML/CSS</p>      
+                            </div>
                         </div>
                     </div>
                     <div class="row project">
                         <div class="col-lg-4 align-self-center">
-                            <img class="projects" src="assets/Tripplar.jpg" alt="Tripplar">
+                            <img class="project-img" src="assets/Tripplar.jpg" alt="Tripplar">
                         </div>
                         <div class="col-lg-8">
-                            <a href="https://www.instagram.com/tripplar/" target="_blank" class="emphasis"><strong>Tripplar</strong>, Startup <i class="bi bi-box-arrow-in-up-right"></i></a>
+                            <a href="https://www.instagram.com/tripplar/" target="_blank" class="emphasis title"><strong>Tripplar</strong>, Startup <i class="bi bi-box-arrow-in-up-right"></i></a>
                             <p><i>Dec 2020 - May 2021</i></p>
                             <p><strong>What? </strong>Founded at the peak of the pandemic, Tripplar connects consumers to small businesses in Santa Clara.</p>
                             <ul>
                                 <li>Developed central app navigation bar to create better user experience</li>
                                 <li>Connected front and back-end code for profile screen using Google Firebase</li>
                             </ul>
-                            <p class="skills">Dart</p>
-                            <p class="skills">Flutter</p>      
-                            <p class="skills">Firebase</p>
+                            <div class="skills">
+                                <p class="skill">Dart</p>
+                                <p class="skill">Flutter</p>      
+                                <p class="skill">Firebase</p>
+                            </div>
                         </div>
                     </div>
                     <div class="row project">
                         <div class="col-lg-4 align-self-center">
-                            <img class="projects" src="assets/Wastely.jpeg" alt="Wastely mobile app">
+                            <img class="project-img" src="assets/Wastely.jpeg" alt="Wastely mobile app">
                         </div>
                         <div class="col-lg-8">
-                            <a href="https://devpost.com/software/stop-food-waste-irw73l" target="_blank" class="emphasis"><strong>Wastely</strong>, Hack-for-Humanity <i class="bi bi-box-arrow-in-up-right"></i></a>
+                            <a href="https://devpost.com/software/stop-food-waste-irw73l" target="_blank" class="emphasis title"><strong>Wastely</strong>, Hack-for-Humanity <i class="bi bi-box-arrow-in-up-right"></i></a>
                             <p><i>Feb 2021</i></p>
                             <p><strong>What? </strong>43 billion pounds of food are thrown out every year - Wastely gives consumers the tool to browse inventory of local grocery stores and purchase items close-to-expiration.</p>
                             <ul>
                                 <li>Developed front-end for individual business and discover pages to connect consumers to stores</li>
                             </ul>
-                            <p class="skills">Dart</p>
-                            <p class="skills">Flutter</p>      
-                            <p class="skills">Firebase</p>
+                            <div class="skills">
+                                <p class="skill">Dart</p>
+                                <p class="skill">Flutter</p>      
+                                <p class="skill">Firebase</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="fixed-bottom">
-            <img id="logoFull" href="" src="assets/logoNameNoBG.png" alt="Rian Jasmine Logo">
+        <div class="footer">
             <img id="logoSmall" href="" src="assets/logoSmallNoBG.png" alt="Rian Jasmine Logo">
         </div>
     </div>

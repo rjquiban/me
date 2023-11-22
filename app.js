@@ -1,37 +1,22 @@
-var myFullpage = new fullpage('#fullpage', {
-    scrollBar: true,
-    anchors: ["home", "about", "experience", "projects"],
-    menu: "#menu",
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-    afterRender: () => {
-        // selectors for PTHub card
-        let pthubCard = document.querySelector("#pthubCard");
-        let pthubFront = document.querySelector("#pthubCard .front");
-        let pthubBack = document.querySelector("#pthubCard .back");
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
 
-        // selectors for Floop card
-        let floopCard = document.querySelector("#floopCard");
-        let floopFront = document.querySelector("#floopCard .front");
-        let floopBack = document.querySelector("#floopCard .back");
+    let down = this.children[0].children[1].children[0];
+    let up = this.children[0].children[1].children[1];
 
-        // selectors for Microsoft card
-        let msCard = document.querySelector("#msCard");
-        let msFront = document.querySelector("#msCard .front");
-        let msBack = document.querySelector("#msCard .back");
-
-        $(pthubCard).mouseup( () => {
-            $(pthubFront).toggleClass("hide");
-            $(pthubBack).toggleClass("hide");
-        });
-
-        $(floopCard).mouseup( () => {
-            $(floopFront).toggleClass("hide");
-            $(floopBack).toggleClass("hide");
-        });
-
-        $(msCard).mouseup( () => {
-            $(msFront).toggleClass("hide");
-            $(msBack).toggleClass("hide");
-        });
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+        up.style.display = "none";
+        down.style.display = "block"
+        panel.style.maxHeight = null;
+    } else {
+        up.style.display = "block";
+        down.style.display = "none"
+        panel.style.maxHeight = panel.scrollHeight + "px";
     }
-});
+  });
+}

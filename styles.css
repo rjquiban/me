@@ -1,196 +1,103 @@
+:root {
+    --navy: #15181f;
+    --darknavy: #0a0d12;
+    --darkgrey: #38383e;
+    --lightgrey: #807a81;
+    --white: #ffffff;
+    --electricblue: #49bec2;
+}
+
 body {
-    background-color: #15181f;
-    color: white;
+    background-color: var(--navy);
+    color: var(--white);
 }
 
-ul {
-    padding-left: 20px;
+.header {
+    position: fixed;
 }
 
-.navbar {
-    padding-top: 0;
-    font-weight: 700;
+.resume {
+    height: 100vh;
+    overflow-y: scroll;
 }
 
-.experienceCards {
-    width: 95%;
-    height: 175px;
-    padding: 35px;
-    background: #403c41;
-    float: left;
-    margin: 1%;
-    margin-left: 2%;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    transition: transform 400ms;
+.accordion {
+    background-color: var(--navy);
+    color: var(--white);
+    cursor: pointer;
+    padding: 14px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    /* transition: 0.4s; */
 }
 
-.projects {
-    margin-left: 7%;
-}
-
-.projectSquares {
-    width: 350px;
-    height: 375px;
-    padding: 35px;
-    background: #403c41;
-    float: left;
-    margin: 1%;
-    border-radius: 15%;
-    /* margin-left: 2%; */
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    transition: transform 400ms;
-}
-
-.experienceCards p {
+.accordion p {
     margin-bottom: 0;
 }
 
-.experienceCards:hover{
-    background: #7b7a88;
-    transform: rotateY(10deg);
+.accordion:hover {
+    background: var(--darknavy);
 }
 
-.front {
-    padding-top: 35px;
+.accordion.active {
+    background-color: var(--darknavy);
 }
 
 .logos {
     width: 25px;
-    height: 25px;
     margin-right: 8px;
     margin-bottom: 5px;
 }
 
-.links {
+.panel {
+    padding: 0 18px;
+    background-color: var(--navy);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+
+.panel ul {
+    margin: 0.5rem 0 0.5rem 0;
+    padding-left: 0.5rem;
+}
+
+.skills {
+    color: var(--electricblue);
+    padding: 0px 0.5rem;
+    border-radius: 20px;
+    display: inline-block;
+    border: 2px solid var(--electricblue);
+}
+
+.bi {
+    -webkit-text-stroke: 2px;
     color: white;
-}
-
-.outlineButton {
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-    border-radius: 10px;
-}
-
-.outlineButton:hover {
-    background-color: white;
-    color: black;
-}
-
-.hide {
-    display: none;
-}
-
-#logoFull, #logoSmall {
-    max-height: 60px;
-    margin: 10px;
-}
-
-#arrowDown {
-    fill: white;
-    width: 4em;
-    height: 4em;
-
-    animation-name: bounce;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
 }
 
 #me {
-    max-height: 400px;
-    border-radius: 10%;
+    /* max-height: 200px; */
+    max-width: 100%;
+    border-radius: 10px;
 }
 
-#bio {
-    padding-top: 7%;
+/* BREAKPOINT RESPONSIVENESS */
+
+@media (max-width: 1200px) {
+
 }
 
-#experienceHeader {
-    margin-top: auto;
-    margin-bottom: auto;
+@media (max-width: 992px) {
+
 }
 
-#cards {
-    margin: 0 auto;
-    max-width: 1000px;
-    align-content: space-between;
+@media (max-width: 768px) {
+   
 }
 
-#projectsHeader {
-    margin-left: 7%;
-}
-
-#projectSquares {
-    margin: 0 auto;
-    max-width: 1000px;
-    align-content: space-between;
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0px);
-    }
-
-    40% {
-        transform: translateY(-30px);
-    }
-
-    60% {
-        transform: translateY(-15px);
-    }
-}
-
-@keyframes wiggle {
-    0%, 50%, 100% {
-        transform: rotateY(0);
-    }
-
-    15% {
-        transform: rotateY(20deg);
-    }
-}
-
-@media (max-width: 767px) {
-    #logoFull {
-        display: none;
-    }
-
-    #logoSmall {
-        display: inline-flex;
-    }
-
-    #arrowDown {
-        margin-top: 2em;
-    }
-
-    #experienceHeader {
-        font-size: 20px;
-    }
-
-    .teams {
-        font-size: 14px;
-    }
-
-    .info {
-        font-size: 12px;
-    }
-
-    .projectSquares {
-        height: 300px;
-        border-radius: 10%;
-    }
-}
-
-@media (min-width: 768px) {
-    #logoFull {
-        display: inline-flex;
-    }
-
-    #logoSmall {
-        display: none;
-    }
+@media (max-width: 576px) {
+   
 }

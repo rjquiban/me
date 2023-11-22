@@ -5,50 +5,136 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
 
     <!-- Bootstrap reference -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   
-    <!-- fullpage.js reference -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script> 
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    
     <link rel="stylesheet" type="text/css" href="styles.css">
-
     <title>RJ Quiban</title>
 </head>
 <body>
     <div class="container-fluid">
-    <!-- Navbar -->
-    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark">
-        <img id="logoFull" href="" src="assets/logoNameNoBG.png" alt="Rian Jasmine Logo">
-        <img id="logoSmall" href="" src="assets/logoSmallNoBG.png" alt="Rian Jasmine Logo">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded=false aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarContent">
-            <ul id="menu" class="navbar-nav ml-auto">
-                <li data-menuanchor="home" class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li data-menuanchor="about" class="nav-item">
-                    <a class="nav-link" href="#about">About Me</a>
-                </li>
-                <li data-menuanchor="experience" class="nav-item">
-                    <a class="nav-link" href="#experience">Experience</a>
-                </li>
-                <li data-menuanchor="projects" class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-            </ul>
+        <div class="row">
+            <div class="col-sm-4">
+                <h1>RJ Quiban</h1>
+                <h4>Some interesting tagline</h4>
+                <h5>Objective</h5>
+            </div>
+            <div class="col-sm-8 resume">
+                <div class="row">
+                    <h3>About Me</h3>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img id="me" src="assets/headshot.jpg" alt="RJ Quiban, headshot smiling">
+                        </div>
+                        <div class="col-md-10">
+                            <p>Loren ipsum...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h3>Experience</h3>
+                    <button class="accordion">
+                        <div class="row align-items-center">
+                            <div class="col-sm-11">                       
+                                <p><img class="logos" src="assets/INRIXLogo.png" alt="INRIX Logo"><strong>INRIX</strong>, Software Engineering Intern</p>
+                                <p><i>June 2023 - Sept 2023</i></p>
+                            </div>
+                            <div class="col-sm-1">
+                                <i class="bi bi-chevron-down"></i>
+                                <i class="bi bi-chevron-up" style="display: none"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="panel">
+                      <ul>
+                        <li>Redesigned and implemented new quality metrics API using Node.js and API Gateway by updating REST API to meet organizational standards, which enhanced maintainability and scalability </li>
+                        <li>Engineered frontend data handlers in JavaScript to create new product logic layer, reducing data visualization load times and improving responsiveness for quality metrics dashboard</li>
+                        <li>Implemented user interfaces for detailed country, urban area, and data provider views using Vue.js to provide deeper insights into speed quality metrics and calculations</li>
+                      </ul>
+                      <p class="skills">Node.js</p>
+                      <p class="skills">API Gateway</p>
+                      <p class="skills">JavaScript</p>
+                      <p class="skills">Vue.js</p>
+                    </div>
+                    <button class="accordion">
+                        <div class="row align-items-center">
+                            <div class="col-sm-11">
+                                <p><img class="logos" src="assets/FloopLogo.png" alt="Floop Logo"><strong>Floop Edu</strong>, Software Engineering Intern</p>
+                                <p><i>June 2022 - Aug 2022</i></p>
+                            </div>
+                            <div class="col-sm-1">
+                                <i class="bi bi-chevron-down"></i>
+                                <i class="bi bi-chevron-up" style="display: none"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="panel">
+                      <ul>
+                        <li>Productionalized 4 different feature prototypes using React, rearchitecting the components and pulling in necessary libraries to launch top-requested features for over 15K teacher users</li>
+                        <li>Developed feature in JavaScript that converts web-based markup location to static pdf representation, supporting offline annotated records for teachers</li>
+                        <li>Built end-to-end subscription management system, integrating with Stripe and Firebase to reliably sync payment management within two weeks of paywall launch</li>
+                      </ul>
+                      <p class="skills">React</p>
+                      <p class="skills">JavaScript</p>
+                      <p class="skills">Stripe</p>
+                      <p class="skills">Firebase</p>
+                    </div>
+                    <button class="accordion">
+                        <div class="row align-items-center">
+                            <div class="col-sm-11">
+                                <p><img class="logos" src="assets/FloopLogo.png" alt="Floop Logo"><strong>Floop Edu</strong>, Web Development Intern</p>
+                                <p><i>June 2020 - Aug 2020</i></p>
+                            </div>
+                            <div class="col-sm-1">
+                                <i class="bi bi-chevron-down"></i>
+                                <i class="bi bi-chevron-up" style="display: none"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="panel">
+                      <ul>
+                        <li>Conducted accessibility audit of Floop web application and created 4-page document detailing recommendations for improvement, which resulted in creation of company-wide accessibility standards</li>
+                        <li>Led accessibility project for web development team to resolve 5 high-priority accessibility issues</li>
+                      </ul>
+                    </div>
+                    <button class="accordion">
+                        <div class="row align-items-center">
+                            <div class="col-sm-11">
+                                <p><img class="logos" src="assets/MicrosoftLogo.png" alt="Microsoft Logo"><strong>Microsoft</strong>, Software Engineering Intern</p>
+                                <p><i>June 2019 - Aug 2019</i></p>
+                            </div>
+                            <div class="col-sm-1">
+                                <i class="bi bi-chevron-down"></i>
+                                <i class="bi bi-chevron-up" style="display: none"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="panel">
+                      <ul>
+                        <li>Created 5 instructional videos using Office Media products to teach high school students coding fundamentals</li>
+                        <li>Developed 3D Tetris prototype using JavaScript, TypeScript, and Babylon.js to explore game development </li>
+                      </ul>
+                      <p class="skills">JavaScript</p>
+                      <p class="skills">TypeScript</p>
+                      <p class="skills">Babylon.js</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <h3>Projects</h3>
+                    <p>Project #1</p>
+                    <p>Project #2</p>
+                    <p>Project #3</p>
+                </div>
+            </div>
         </div>
-    </nav>
 
-    <div id="fullpage" class="container-fluid">
+
+
         <!-- home section -->
-        <div class="section active">
+        <!-- <div class="section active">
             <div class="row">
                 <div class="col-sm-6 d-flex justify-content-center">
-                    <h3>Hi, my name is Rian Jasmine or RJ for short :)</h3> 
+                    <h3>Hi, my name is RJ Quiban :)</h3> 
                 </div>
                 <div class="col-sm-6 d-flex justify-content-center">
                     <svg id="arrowDown" viewBox="0 0 16 16" class="bi bi-arrow-down" xmlns="http://www.w3.org/2000/svg">
@@ -57,153 +143,27 @@
                     </svg>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- about me section -->
-        <div class="section">
+        <!-- <div class="section">
             <div class="row ">
                 <div class="col-md-6 d-flex justify-content-center">
                     <img id="me" src="assets/headshot.jpg" alt="RJ Quiban, headshot smiling">
                 </div>
                 <div id="bio" class="col-md-6">
                     <h3>Seattle-native,</h3>
-                    <h3>Aspiring software developer,</h3>
-                    <h3>Second year CS student at Santa Clara University.</h3>   
+                    <h3>Aspiring software engineer,</h3>
+                    <h3>Fourth year CS student at Santa Clara University.</h3>   
                     <a href="https://www.linkedin.com/in/rianjasminequiban/" target="_blank"><button type="button" class="outlineButton" >Let's Connect</button></a>
                 </div>
             </div>
-        </div>
-        <!-- experience section -->
-        <div class="section">
-            <div id="cards" class="row">
-                <div class="col-2 d-flex justify-content-center">
-                    <h3 id="experienceHeader" class="align-middle">Technical Experience</h3>
-                </div>
-
-                <div id="bio" class="col-10 justify-content-center">
-                    <!-- PTHub Card -->
-                    <div id="pthubCard" class="experienceCards">
-                        <div class="front">
-                            <h4><img class="logos" src="assets/PTHub Logo.png" alt="PTHub Logo">Public Transit Hub</h4>
-                            <p><i>Research Assistant</i></p>
-                            <p>May 2021 - Present</p>
-                        </div>
-            
-                        <div class="back hide">
-                            <h5 class="teams">Web Development</h5>
-                            <ul class="info">
-                                <li>Integrating code base with Amazon Cognito 
-                                    to accelerate MVP development</li>
-                                <li>Managing Git workflow of web dev team to 
-                                    enforce code quality standards</li>    
-                            </ul>
-                            <p class="info"><i>JavaScript, React</i></p>
-                        </div>
-                    </div>
-
-
-                      <!-- Floop Card -->
-                    <div id="floopCard" class="experienceCards">
-                        <div class="front">
-                            <h4><img class="logos" src="assets/Floop Logo.png" alt="Floop Logo">Floop Edu.</h4>
-                            <p><i>Web Development Intern</i></p>
-                            <p>June 2020 - August 2020</p>
-                        </div>
-            
-                        <div class="back hide">
-                            <h5 class="teams">Web Dev & Accessibility</h5>
-                            <ul class="info">
-                                <li>Conducted audit of app, resulting 
-                                    in improvement of company-wide 
-                                    accessibility processes</li>
-                                <li>Led accessibility project on GitHub to 
-                                    resolve 5 high-priority accessibility 
-                                    issues</li>    
-                            </ul>
-                            <p class="info"><i>HTML/CSS, JavaScript, AWS Cognito</i></p>
-                        </div>
-                    </div> 
-
-                    <!-- Microsoft Card -->
-                    <div id="msCard" class="experienceCards">
-                        <div class="front">
-                            <h4><img class="logos" src="assets/Microsoft Logo.png" alt="Microsoft Logo">Microsoft</h4>
-                            <p><i>Software Engineering Intern</i></p>
-                            <p>June 2019 - August 2019</p>    
-                        </div>
-        
-                        <div class="back hide">
-                            <h5 class="teams">Office Media Group</h5>
-                            <ul class="info">
-                                <li>Created 5 instructional videos to educate 
-                                    high school students about coding fundamentals</li>
-                                <li>Developed and deployed a 3D web-based Tetris 
-                                    game to explore game development</li>
-                            </ul>
-                            <p class="info"><i>HTML, JavaScript, TypeScript</i></p>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-        </div> 
-        <!-- projects section -->
-        <div class="section">
-            <h3 id="projectsHeader">Projects</h3>
-            <div class="projects">
-                <!-- SmartWalk Card -->
-                <div class="projectSquares" id="smartWalkCard">
-                    <h4>SmartWalk</h4>
-                    <p><i>Inrix Hack-a-Thon, </i>Fall 2021</p>
-                    <ul class="info">
-                        <li>Developed front-end of website
-                            to process Inrix routing API data 
-                            and place geojson objects on map</li>
-                        <li>Integrated actual SFPD crimes
-                            data to evaluate and rank safety
-                            of 3 routes</li>
-                    </ul>
-                    <p class="info"><i>HTML/CSS, JavaScript</i></p>
-                    <a href="https://devpost.com/software/safewalk-0yf4ue?ref_content=my-projects-tab&ref_feature=my_projects" target="_blank"><button type="button" class="outlineButton">Check out the DevPost project!</button></a>
-                </div>
-
-                <!-- Wastely Card -->
-                <div class="projectSquares" id="wastelyCard">
-                    <h4><img class="logos" src="assets/Wastely Logo.jpg" alt="Wastely Logo">Wastely</h4>
-                    <p><i>Hack for Humanity, </i>March 2021</p>
-                    <ul class="info">
-                        <li>Created using Flutter and Dart
-                            to connect users with grocery
-                            stores to combat food waste</li>
-                        <li>Responsible for front-end
-                            development of app</li>
-                    </ul>
-                    <p class="info"><i>Dart, Flutter, Google Firebase</i></p>
-                    <a href="https://devpost.com/software/stop-food-waste-irw73l" target="_blank"><button type="button" class="outlineButton" >Check out the DevPost project!</button></a>
-                </div>
-
-                <!-- Tripplar Card -->
-                <div class="projectSquares" id="wastelyCard">
-                    <h4><img class="logos" src="assets/Tripplar Logo.png" alt="Tripplar Logo">Tripplar</h4>
-                    <p><i>Startup, </i>Winter 2020</p>
-                    <ul class="info">
-                        <li>Developed central app
-                            navigation bar to create 
-                            better user experience</li>
-                        <li>Connected front and back-end 
-                            code for profile screen using 
-                            Google Firebase</li>
-                    </ul>
-                    <p class="info"><i>Dart, Flutter, Google Firebase</i></p>
-                    <a href="https://apps.apple.com/us/app/tripplar/id1548266415" target="_blank"><button type="button" class="outlineButton">Check out the app!</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
+        </div> -->
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
     <script type="text/javascript" src="app.js"></script>
 </body>
 </html>

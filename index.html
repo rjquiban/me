@@ -14,29 +14,25 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-4">
-                <h1>RJ Quiban</h1>
-                <h4>Some interesting tagline</h4>
-                <h5>Objective</h5>
+            <div class="col-sm-4 header">
+                <h1 class="emphasis">RJ Quiban</h1>
+                <h4>Aspiring SWE | First-Gen | Fil-Am</h4>
+                <a href="https://www.linkedin.com/in/rianjasminequiban/" target="_blank"><button type="button" class="outlineButton" >Let's Connect</button></a>
             </div>
             <div class="col-sm-8 resume">
-                <div class="row">
-                    <h3>About Me</h3>
-                    <div class="row">
-                        <div class="col-md-2">
-                            <img id="me" src="assets/headshot.jpg" alt="RJ Quiban, headshot smiling">
-                        </div>
-                        <div class="col-md-10">
-                            <p>Loren ipsum...</p>
-                        </div>
+                <div class="row nav-section">
+                    <div class="col-sm-12">
+                        <img id="me" class="img-fluid" src="assets/headshot.jpg" alt="RJ Quiban, headshot smiling">
+                        <h3>About Me</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra tellus in hac habitasse platea. Sit amet commodo nulla facilisi nullam vehicula. Dignissim diam quis enim lobortis scelerisque.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor augue mauris augue neque gravida in. Netus et malesuada fames ac. Enim facilisis gravida neque convallis a cras semper. Habitant morbi tristique senectus et netus et malesuada fames ac.</p>    
                     </div>
                 </div>
-                <div class="row">
-                    <h3>Experience</h3>
+                <div class="row nav-section">
                     <button class="accordion">
                         <div class="row align-items-center">
                             <div class="col-sm-11">                       
-                                <p><img class="logos" src="assets/INRIXLogo.png" alt="INRIX Logo"><strong>INRIX</strong>, Software Engineering Intern</p>
+                                <p class="emphasis"><img class="logos" src="assets/INRIXLogo.png" alt="INRIX Logo"><strong>INRIX</strong>, Software Engineering Intern</p>
                                 <p><i>June 2023 - Sept 2023</i></p>
                             </div>
                             <div class="col-sm-1">
@@ -59,7 +55,7 @@
                     <button class="accordion">
                         <div class="row align-items-center">
                             <div class="col-sm-11">
-                                <p><img class="logos" src="assets/FloopLogo.png" alt="Floop Logo"><strong>Floop Edu</strong>, Software Engineering Intern</p>
+                                <p class="emphasis"><img class="logos" src="assets/FloopLogo.png" alt="Floop Logo"><strong>Floop Edu</strong>, Software Engineering Intern</p>
                                 <p><i>June 2022 - Aug 2022</i></p>
                             </div>
                             <div class="col-sm-1">
@@ -82,7 +78,7 @@
                     <button class="accordion">
                         <div class="row align-items-center">
                             <div class="col-sm-11">
-                                <p><img class="logos" src="assets/FloopLogo.png" alt="Floop Logo"><strong>Floop Edu</strong>, Web Development Intern</p>
+                                <p class="emphasis"><img class="logos" src="assets/FloopLogo.png" alt="Floop Logo"><strong>Floop Edu</strong>, Web Development Intern</p>
                                 <p><i>June 2020 - Aug 2020</i></p>
                             </div>
                             <div class="col-sm-1">
@@ -96,11 +92,13 @@
                         <li>Conducted accessibility audit of Floop web application and created 4-page document detailing recommendations for improvement, which resulted in creation of company-wide accessibility standards</li>
                         <li>Led accessibility project for web development team to resolve 5 high-priority accessibility issues</li>
                       </ul>
+                      <p class="skills">JavaScript</p>
+                      <p class="skills">React</p>
                     </div>
                     <button class="accordion">
                         <div class="row align-items-center">
                             <div class="col-sm-11">
-                                <p><img class="logos" src="assets/MicrosoftLogo.png" alt="Microsoft Logo"><strong>Microsoft</strong>, Software Engineering Intern</p>
+                                <p class="emphasis"><img class="logos" src="assets/MicrosoftLogo.png" alt="Microsoft Logo"><strong>Microsoft</strong>, Software Engineering Intern</p>
                                 <p><i>June 2019 - Aug 2019</i></p>
                             </div>
                             <div class="col-sm-1">
@@ -119,45 +117,99 @@
                       <p class="skills">Babylon.js</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row nav-section">
                     <h3>Projects</h3>
-                    <p>Project #1</p>
-                    <p>Project #2</p>
-                    <p>Project #3</p>
+                    <div class="row project">
+                        <div class="col-sm-4 align-self-center">
+                            <img class="projects" src="assets/PTHubWebsite.jpg" alt="PTHub Logo">
+                        </div>
+                        <div class="col-sm-8">
+                            <a href="https://publictransithub.com/" target="_blank" class="emphasis"><strong>Public Transit Hub</strong>, Research Assistant <i class="bi bi-box-arrow-in-up-right"></i></a>
+                            <p><i>May 2021 - May 2023</i></p>
+                            <p><strong>What? </strong>PTHub was created to give Santa Clara University students an easy and accessible way to travel smarter.</p>
+                            <ul>
+                                <li>Integrated web app with Amazon Cognito to add user authentication, accelerating product development</li>
+                                <li>Implemented dynamic map to display geolocation data of bus routes and stops</li>
+                            </ul>       
+                            <p class="skills">JavaScript</p>
+                            <p class="skills">Amazon Cognito</p>
+                        </div>
+                    </div>
+                    <div class="row project">
+                        <div class="col-sm-4 align-self-center">
+                            <img class="projects" src="assets/Tripfolio.jpeg" alt="Tripfolio Logo">
+                        </div>
+                        <div class="col-sm-8">
+                            <a href="https://devpost.com/software/bay-trips" target="_blank" class="emphasis"><strong>Tripfol.io</strong>, 1st Place Prize INRIX Hack <i class="bi bi-box-arrow-in-up-right"></i></a>
+                            <p><i>Nov 2022</i></p>
+                            <p><strong>What? </strong>Tripfol.io curates an experience for you - share your location, receive a list of recommendations, select places of interest, and watch a complete itinerary unfold before your eyes.</p>
+                            <ul>
+                                <li>Built API endpoints using Flask and Python to get Yelp and INRIX data for curated trip recommendations</li>
+                                <li>Designed greedy algorithm to find most optimal multi-waypoint route for efficient routing between stops</li>
+                                <li>Managed final project presentation to showcase innovation and turn project into compelling business pitch</li>
+                            </ul>
+                            <p class="skills">Flask</p>
+                            <p class="skills">Python</p>        
+                        </div>
+                    </div>
+                    <div class="row project">
+                        <div class="col-sm-4 align-self-center">
+                            <img class="projects" src="assets/SmartWalkWebsite.jpeg" alt="SmartWalk Website">
+                        </div>
+                        <div class="col-sm-8">
+                            <a href="https://devpost.com/software/safewalk-0yf4ue?ref_content=my-projects-tab&ref_feature=my_projects" target="_blank" class="emphasis"><strong>Smart Walk</strong>, INRIX Hack <i class="bi bi-box-arrow-in-up-right"></i></a>
+                            <p><i>Nov 2021</i></p>
+                            <p><strong>What? </strong>SmartWalk provides the safest routing from point A to point B using INRIX routing data and criminal incident reports.</p>
+                            <ul>
+                                <li>Developed front-end of website to process Inrix routing API data and place geojson objects on map</li>
+                                <li>Integrated actual SFPD crimes data to evaluate and rank safety of 3 routes</li>
+                            </ul>
+                            <p class="skills">JavaScript</p>
+                            <p class="skills">HTML</p>      
+                            <p class="skills">CSS</p>
+                        </div>
+                    </div>
+                    <div class="row project">
+                        <div class="col-sm-4 align-self-center">
+                            <img class="projects" src="assets/Wastely.jpeg" alt="Wastely mobile app">
+                        </div>
+                        <div class="col-sm-8">
+                            <a href="https://devpost.com/software/stop-food-waste-irw73l" target="_blank" class="emphasis"><strong>Wastely</strong>, Hack-for-Humanity <i class="bi bi-box-arrow-in-up-right"></i></a>
+                            <p><i>March 2021</i></p>
+                            <p><strong>What? </strong>43 billion pounds of food are thrown out every year - Wastely gives consumers the tool to browse inventory of local grocery stores and purchase items close-to-expiration.</p>
+                            <ul>
+                                <li>Created using Flutter and Dart to connect users with grocery stores to combat food waste</li>
+                                <li>Responsible for front-end development of app</li>
+                            </ul>
+                            <p class="skills">Dart</p>
+                            <p class="skills">Flutter</p>      
+                            <p class="skills">Firebase</p>
+                        </div>
+                    </div>
+                    <div class="row project">
+                        <div class="col-sm-4 align-self-center">
+                            <img class="projects" src="assets/Tripplar.jpg" alt="Tripplar">
+                        </div>
+                        <div class="col-sm-8">
+                            <p class="emphasis"><strong>Tripplar</strong>, Startup</p>
+                            <p><i>Dec 2020 - Mar 2021</i></p>
+                            <p><strong>What? </strong>Founded at the peak of the pandemic, Tripplar connects consumers to small businesses in Santa Clara.</p>
+                            <ul>
+                                <li>Developed central app navigation bar to create better user experience</li>
+                                <li>Connected front and back-end code for profile screen using Google Firebase</li>
+                            </ul>
+                            <p class="skills">Dart</p>
+                            <p class="skills">Flutter</p>      
+                            <p class="skills">Firebase</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-
-        <!-- home section -->
-        <!-- <div class="section active">
-            <div class="row">
-                <div class="col-sm-6 d-flex justify-content-center">
-                    <h3>Hi, my name is RJ Quiban :)</h3> 
-                </div>
-                <div class="col-sm-6 d-flex justify-content-center">
-                    <svg id="arrowDown" viewBox="0 0 16 16" class="bi bi-arrow-down" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M4.646 9.646a.5.5 0 0 1 .708 0L8 12.293l2.646-2.647a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 0-.708z"/>
-                        <path fill-rule="evenodd" d="M8 2.5a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-1 0V3a.5.5 0 0 1 .5-.5z"/>
-                    </svg>
-                </div>
-            </div>
-        </div> -->
-        <!-- about me section -->
-        <!-- <div class="section">
-            <div class="row ">
-                <div class="col-md-6 d-flex justify-content-center">
-                    <img id="me" src="assets/headshot.jpg" alt="RJ Quiban, headshot smiling">
-                </div>
-                <div id="bio" class="col-md-6">
-                    <h3>Seattle-native,</h3>
-                    <h3>Aspiring software engineer,</h3>
-                    <h3>Fourth year CS student at Santa Clara University.</h3>   
-                    <a href="https://www.linkedin.com/in/rianjasminequiban/" target="_blank"><button type="button" class="outlineButton" >Let's Connect</button></a>
-                </div>
-            </div>
-        </div> -->
+        <div class="fixed-bottom">
+            <img id="logoFull" href="" src="assets/logoNameNoBG.png" alt="Rian Jasmine Logo">
+            <img id="logoSmall" href="" src="assets/logoSmallNoBG.png" alt="Rian Jasmine Logo">
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

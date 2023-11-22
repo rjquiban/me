@@ -2,36 +2,47 @@
     --navy: #15181f;
     --darknavy: #0a0d12;
     --darkgrey: #38383e;
-    --lightgrey: #807a81;
+    --lightgrey: #9e9e9e;
     --white: #ffffff;
     --electricblue: #49bec2;
+    --electricbluergb: 73, 190, 194;
 }
 
 body {
     background-color: var(--navy);
-    color: var(--white);
+    color: var(--lightgrey);
 }
 
 .header {
-    position: fixed;
+    padding: 1rem 5% 1rem 5%;
+    margin: auto 0;
+    height: 100%;
+}
+
+.emphasis {
+    color: var(--white);
 }
 
 .resume {
     height: 100vh;
     overflow-y: scroll;
+    padding: 0 5% 0 5%;
+}
+
+.nav-section {
+    margin-top: 2rem;
 }
 
 .accordion {
     background-color: var(--navy);
-    color: var(--white);
+    color: var(--lightgrey);
     cursor: pointer;
     padding: 14px;
     width: 100%;
     text-align: left;
     border: none;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    /* transition: 0.4s; */
+    border-bottom: 1px solid var(--lightgrey);
+    transition: 0.4s;
 }
 
 .accordion p {
@@ -39,7 +50,7 @@ body {
 }
 
 .accordion:hover {
-    background: var(--darknavy);
+    background-color: var(--darknavy);
 }
 
 .accordion.active {
@@ -50,6 +61,18 @@ body {
     width: 25px;
     margin-right: 8px;
     margin-bottom: 5px;
+}
+
+.outlineButton {
+    background-color: transparent;
+    color: var(--electricblue);
+    border: 2px solid var(--electricblue);
+    border-radius: 10px;
+}
+
+.outlineButton:hover {
+    background-color: var(--electricblue);
+    color: var(--navy);
 }
 
 .panel {
@@ -66,38 +89,84 @@ body {
 }
 
 .skills {
+    background-color: rgba(var(--electricbluergb), 0.2);
     color: var(--electricblue);
     padding: 0px 0.5rem;
     border-radius: 20px;
     display: inline-block;
-    border: 2px solid var(--electricblue);
 }
 
 .bi {
-    -webkit-text-stroke: 2px;
-    color: white;
+    -webkit-text-stroke: 1px;
+    color: var(--lightgrey);
+}
+
+.projects {
+    width: 100%;
+}
+
+.project {
+    margin: 1rem 0 1rem 0;
+}
+
+.project p {
+    margin-bottom: 0;
+}
+
+.project a {
+    text-decoration: none;
+}
+
+.project a:hover {
+    color: var(--electricblue);
+}
+
+.project .bi {
+    color: inherit;
 }
 
 #me {
-    /* max-height: 200px; */
-    max-width: 100%;
-    border-radius: 10px;
+    width: 200px;
+    float: left;
+    margin: 0 1.5rem 1rem 0;
+    border-radius: 20px;
+}
+
+#logoFull, #logoSmall {
+    max-height: 40px;
+    float: right;
+    margin: 1rem;
 }
 
 /* BREAKPOINT RESPONSIVENESS */
 
-@media (max-width: 1200px) {
-
+@media (min-width: 768px){
+    /* .header {
+      position: absolute;
+      top: 0px;
+      bottom: 0;
+      left: 0;
+      width: 15%;
+      overflow-y: scroll; 
+    } */
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
+    #logoFull {
+        display: inline-flex;
+    }
 
+    #logoSmall {
+        display: none;
+    }
 }
 
-@media (max-width: 768px) {
-   
-}
+@media (max-width: 991px) {
+    #logoFull {
+        display: none;
+    }
 
-@media (max-width: 576px) {
-   
+    #logoSmall {
+        display: block;
+    }
 }

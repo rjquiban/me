@@ -1,7 +1,7 @@
-var acc = document.getElementsByClassName("accordion");
-var i;
+const acc = document.getElementsByClassName("accordion");
 
-for (i = 0; i < acc.length; i++) {
+// add event listener to each accordion to expand on click
+for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
 
@@ -20,3 +20,14 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+// resize accordion panel if user resizes window
+addEventListener("resize", () => {
+  for(let i = 0; i < acc.length; i++) {
+    let panel = acc[i].nextElementSibling;
+
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  }
+});

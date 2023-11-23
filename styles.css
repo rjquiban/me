@@ -125,15 +125,11 @@ p, li {
     border-radius: 15px;
     padding: 1rem 0;
     margin: 0.5rem 0 0.5rem 0;
-    transition: 0.4s;
-}
-
-.project:hover {
-    background-color: var(--darknavy);
 }
 
 .project a {
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .project a:hover {
@@ -149,6 +145,7 @@ p, li {
     color: var(--electricblue);
     font-size: 2rem;
     margin: 0 0.5rem 0 0;
+    transition: 0.3s;
 }
 
 .contact-icons:hover {

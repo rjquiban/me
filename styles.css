@@ -35,7 +35,6 @@ p, li {
 .header {
     padding: 1rem 5% 1rem 5%;
     margin: auto 0;
-    height: 100%;
 }
 
 .emphasis {
@@ -182,18 +181,14 @@ p, li {
         width: 100px;
         margin: 0 0.5rem 0.5rem 0;
     }
+
+    .resume {
+        overflow-y: visible; 
+    }
 }
 
 @media (max-width: 991px) {
     .projects {
         margin-bottom: 0.5rem;
-    }
-
-    #logoFull {
-        display: none;
-    }
-
-    #logoSmall {
-        display: block;
     }
 }
